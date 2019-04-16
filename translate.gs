@@ -17,5 +17,5 @@ function doPost(e) {
   }else{
     var translatedText = "not supported " + source_lang;
   }
-  return ContentService.createTextOutput(translatedText);
+  return ContentService.createTextOutput(source_text + ": " + translatedText);
 }
